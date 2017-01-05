@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-05T10:20:20.000Z</updated>
+  <updated>2017-01-05T17:56:17.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>异步编程的解决方案 Promise</title>
+    <link href="http://yoursite.com/2017/01/05/promise/"/>
+    <id>http://yoursite.com/2017/01/05/promise/</id>
+    <published>2017-01-05T15:15:09.000Z</published>
+    <updated>2017-01-05T17:56:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>上半年开始看一些 js 方面的书 陆陆续续买了四五本竟然都多多少少的提到了<br> Promise</p>
+<p>比如</p>
+<ul>
+<li><a href="https://item.jd.com/11778251.html" target="_blank" rel="external">Node.js实战（第2季）</a></li>
+<li><a href="https://item.jd.com/12030814.html" target="_blank" rel="external">你不知道的JavaScript 中卷</a></li>
+<li><a href="https://item.jd.com/11995765.html" target="_blank" rel="external">实战ES2015：深入现代JavaScript 应用开发</a></li>
+</ul>
+<p>这让我不得不正视 Promise 这个由 js社区提出来的异步解决方案，体会到它的好出后决定在我们的 flash项目中使用。<br> github 中有一个 as 版本的 Promise实现 <a href="https://github.com/CodeCatalyst/promise-as3" target="_blank" rel="external">promise-as3</a>并用到了项目中<br>下面贴一些使用 Promise 前后的对比</p>
+<h4 id="游戏中的的异步"><a href="#游戏中的的异步" class="headerlink" title="游戏中的的异步"></a>游戏中的的异步</h4><p>前端开发不可避免的遇到异步编程的的问题比如</p>
+<ul>
+<li>一段时间后触发某个逻辑</li>
+<li>发送协议后需要后台的返回值做相应的展示</li>
+<li>播放动画后，对话等剧情后做逻辑的处理</li>
+<li>……..</li>
+</ul>
+<p>对于这些处理常见的处理形式提供的异步函数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">doSomethingAsync(args callback)</div></pre></td></tr></table></figure>
+<p>调用异步函数的地方：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">doSomethingAsync(args <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    .....</div><div class="line">    .....</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上半年开始看一些 js 方面的书 陆陆续续买了四五本竟然都多多少少的提到了&lt;br&gt; Promise&lt;/p&gt;
+&lt;p&gt;比如&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://item.jd.com/11778251.html&quot; target=&quot;_blank&quot; rel=
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

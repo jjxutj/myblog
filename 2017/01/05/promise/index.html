@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 异步编程的解决方案 Promise · Hexo</title><meta name="description" content="异步编程的解决方案 Promise - John Doe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="Hexo"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">博客</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">文章</a></li><li class="nav-list-item"><a href="http://weibo.com/u/1921143025" target="_blank" class="nav-list-link">微博</a></li><li class="nav-list-item"><a href="https://github.com/jjxutj" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">异步编程的解决方案 Promise</h1><div class="post-info">Jan 5, 2017</div><div class="post-content"><p>上半年开始看一些 js 方面的书 陆陆续续买了四五本竟然都多多少少的提到了<br> Promise</p>
+<p>比如</p>
+<ul>
+<li><a href="https://item.jd.com/11778251.html" target="_blank" rel="external">Node.js实战（第2季）</a></li>
+<li><a href="https://item.jd.com/12030814.html" target="_blank" rel="external">你不知道的JavaScript 中卷</a></li>
+<li><a href="https://item.jd.com/11995765.html" target="_blank" rel="external">实战ES2015：深入现代JavaScript 应用开发</a></li>
+</ul>
+<p>这让我不得不正视 Promise 这个由 js社区提出来的异步解决方案，体会到它的好出后决定在我们的 flash项目中使用。<br> github 中有一个 as 版本的 Promise实现 <a href="https://github.com/CodeCatalyst/promise-as3" target="_blank" rel="external">promise-as3</a>并用到了项目中<br>下面贴一些使用 Promise 前后的对比</p>
+<h4 id="游戏中的的异步"><a href="#游戏中的的异步" class="headerlink" title="游戏中的的异步"></a>游戏中的的异步</h4><p>前端开发不可避免的遇到异步编程的的问题比如</p>
+<ul>
+<li>一段时间后触发某个逻辑</li>
+<li>发送协议后需要后台的返回值做相应的展示</li>
+<li>播放动画后，对话等剧情后做逻辑的处理</li>
+<li>……..</li>
+</ul>
+<p>对于这些处理常见的处理形式提供的异步函数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">doSomethingAsync(args callback)</div></pre></td></tr></table></figure>
+<p>调用异步函数的地方：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">doSomethingAsync(args <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    .....</div><div class="line">    .....</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/01/05/hello-world/" class="next">下一篇</a></div><div class="copyright"><p>© 2015 - 2017 <a href="http://yoursite.com">John Doe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
